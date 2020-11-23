@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dem so tu 1 chuoi</title>
+</head>
+
+<body>
+    <script>
+
+        function WordCount(str) {
+            let totalSoFar = 0;
+            for (let i = 0; i < str.length; i++)
+                if (str[i] === " ") { // if a space is found in str
+                    totalSoFar++; // add 1 to total so far
+                }
+            totalSoFar += 1;
+            // add 1 to totalsoFar to account for extra space since 1 space = 2 words
+            return totalSoFar;
+        }
+
+        console.log(WordCount("test String 1 2"));
+    </script>
+</body>
+
+</html>
